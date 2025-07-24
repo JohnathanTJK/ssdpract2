@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import request from 'supertest';
-import { endpointValidateInput, server } from '../server.js';
+import { server } from '../server.js';
 
 describe('POST /check', () => {
   it('should respond with submitted input when valid', async () => {
