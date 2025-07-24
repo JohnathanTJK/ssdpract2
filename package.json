@@ -9,5 +9,8 @@
     "selenium-webdriver": "^4.34.0",
     "supertest": "^7.1.4",
     "test": "^3.3.0"
+  },
+    "scripts": {
+    "test": "mocha tests/*.js"
   }
 }
