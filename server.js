@@ -14,6 +14,11 @@ const __dirname = path.dirname(__filename);
 // Serve static files from 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Example for Express
+app.get('/', (req, res) => {
+  res.send('Server is up!');
+});
+
 // API endpoint
 app.post('/check', (req, res) => {
   const input = req.body.userInput;
