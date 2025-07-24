@@ -5,6 +5,9 @@ on: [push, pull_request]
 jobs:
   eslint:
     runs-on: ubuntu-latest
+    contents: read
+    security-events: write
+    
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
