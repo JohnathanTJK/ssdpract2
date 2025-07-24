@@ -79,8 +79,6 @@ jobs:
           pwd
           echo "Files in the current directory:"
           ls -ltra .
-          echo "Files in the src directory:"
-          ls -ltra src/
           echo "Files in the tests directory:"
           ls -ltra tests/
 
@@ -89,7 +87,7 @@ jobs:
 
       - name: Start Node.js server
         run: |
-          nohup node src/server.js &  # Start the server in the background
+          nohup node server.js &  # Start the server in the background
           sleep 5  # Give the server some time to start
 
       - name: Verify server is running
